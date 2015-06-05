@@ -23,9 +23,9 @@ $(document).ready(function(event) {
 
     $("div#results").append(
       "<h3> And the results are in! </h3>" + "</br>" + 
-      "<h4> For 2 to the power of " + inputtedNumber + "</h4>" + "</br>" + 
-      "<h4> The amount of zeros is " + zeros + "</h4>" + "</br>" + 
-      "<h4> The amount of ones is " + ones + "</h4>");
+      "<h4> For 2 to the power of " + inputtedNumber + " the cocktail is:</h4>" + "</br>" + 
+      "<h4>" + zeros + " parts zero, and" + ones + " parts one! </h4>");
+    $("div#explanation").hide();
     $("div#form").hide();
   });
 });
