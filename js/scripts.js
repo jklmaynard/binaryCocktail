@@ -12,6 +12,7 @@ var Equation = {
 };
 
 $(document).ready(function(event) {
+  $("button#return").hide();
   $("form#binaryCocktail").submit(function(event) {
     event.preventDefault();
 
@@ -22,10 +23,19 @@ $(document).ready(function(event) {
     var ones = equation.numberOnes(zeros, inputtedNumber);
 
     $("div#results").append(
-      "<h3> And the results are in! </h3>" + "</br>" + 
-      "<h4> For 2 to the power of " + inputtedNumber + " the cocktail is:</h4>" + "</br>" + 
-      "<h4>" + zeros + " parts zero, and" + ones + " parts one! </h4>");
+      "<h3> And the results are in! </h3>" +  
+      "<h4> For 2 to the power of " + inputtedNumber + " the cocktail is:</h4>" +  
+      "<h4 class='answer'>" + zeros + " parts zero, and " + ones + " parts one! </h4>").show();
     $("div#explanation").hide();
     $("div#form").hide();
+    $("button#return").show();
+  });
+  
+  $("button#return").click(function(event) {
+    $("div#results").empty().hide();
+    $("button#return").hide();
+    $("div#explanation").show();
+    $("input#number").val("");
+    $("div#form").show();
   });
 });
