@@ -13,5 +13,7 @@ There must be an equation, the young man said out loud to an empty bookstore.
 
 Thus he worked on that rainy afternoon to come up with the equation, to solve the absolutely useless problem of how many 0's and 1's would be in a given range of two to the nth power.  Thus became *binary cocktail*, an equation only useful at cocktail parties, and an application made for just such an occasion. 
 
+[View site here](http://jklmaynard.github.io/binaryCocktail)
 
+(C)2015 James Maynard ~~ Oh Go Ahead And Clone It. 
 
